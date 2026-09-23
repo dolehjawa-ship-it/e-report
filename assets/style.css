@@ -26,3 +26,32 @@ section {
     width: 80%;
   }
 }
+
+footer {
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+
+.footer-link {
+  opacity: 75%;
+}
+
+.footer-link:hover {
+  opacity: 100%;
+}
+
+.copyright {
+  margin-top: 100px;
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+.hero .col:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.hero .col:nth-child(2) {
+  animation-delay: 1s;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML | E-REPORT IDN</title>
+  <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
+
+  <!-- css bootsrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="./assets/style.css">
+
+  <!-- cdn fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- AOS css -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 animate__animated animate__fadeInDown">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/logo.jpg" alt="Logo" width="60" class="d-inline-block text-align-text-top rounded">
+        <span>IDN E-REPORT</span>
+        <button class="navbar-toggler bg-white shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-3 text-center pt-3 pt-lg-0">
+            <li class=" nav-item ">
+              <a class="nav-link text-primary" href="index.html#home">Home</a>
+            </li>
+            <li class=" nav-item ">
+              <a class="nav-link text-primary" href="index.html#about">About</a>
+            </li>
+            <li class=" nav-item ">
+              <a class="nav-link text-primary" href="index.html#services">Services</a>
+            </li>
+            <li class=" nav-item ">
+              <a class="nav-link text-primary" href="index.html#recent">Recent</a>
+            </li>
+            <li class=" nav-item ">
+              <a class="nav-link text-primary" href="index.html#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+
+
+  <!-- all reports -->
+  <section id="reports">
+    <div class="container">
+      <!-- Header -->
+      <div class="mb-4 text-center">
+        <h1 class="fw-bold text-primary-emphasis" data-aos="fade-up" data-aos-duration="1000">All Reports</h1>
+        <p class="lh-lg text-muted " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Lihat semua
+          laporan ang telah dikirim, filter berdasarkan kategori atau cari laporan tertentu.</p>
+      </div>
+      <!-- filter & search -->
+      <div class="row mb-4 g-2 align-items-center">
+        <div class="col md-4">
+          <input type="text" class="form-control" placeholder="Search reports..." data-aos="fade-up"
+            data-aos-delay="300">
+        </div>
+        <div class="col md-3">
+          <select class="form-select shadow-sm" data-aos="fade-up" data-aos-delay="300">
+            <option selected>All Categories</option>
+            <option value="news">Dramok</option>
+            <option value="category2">Reza drama</option>
+            <option value="category3">Jmk 48</option>
+          </select>
+        </div>
+        <div class="col md-3">
+          <select class="form-select shadow-sm" data-aos="fade-up" data-aos-delay="300">
+            <option selected>All Status</option>
+            <option value="newest">Terbaru</option>
+            <option value="oldest">Terlama</option>
+            <option value="popular">Populer</option>
+          </select>
+        </div>
+        <div class="col MD-2">
+          <button class="btn btn-primary w-100" data-aos="fade-up" data-aos-delay="300"><I
+              class="fas fa-filter"></I>Filter</button>
+        </div>
+      </div>
+      <!-- reports -->
+      <div class="row mb-4 g-4">
+        <div class="col-12 col-md-4 col-lg-4 mg-6" data-aos="fade-up" data-aos-delay="700">
+          <div class="card">
+            <p style="background-color: rgb(0, 0, 0.3);" class="position-absolute bg-dak text-white border-0 px-3 py-2">
+              NEWS</p>
+            <img src="./assets/images/images-16.jpeg" class="card-img-top" style="height: 500px; overflow: hidden;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Apakah yang terjadi...?</h5>
+              <p class="mb-4">By: <a class="text-decoration-none" href="">Horor TV </a>4 Jam yang lalu</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card’s content.</p>
+              <a href="#detail report.html" class="btn btn-primary">Selengkapnya...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 mg-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="card">
+            <p style="background-color: rgb(0, 0, 0.3);" class="position-absolute bg-dak text-white border-0 px-3 py-2">
+              NEWS</p>
+            <img src="./assets/images/images-16.jpeg" class="card-img-top" style="height: 500px; overflow: hidden;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Perselisihan Pasutri di Kota Ngawi</h5>
+              <p class="mb-4">By: <a class="text-decoration-none" href="">Ngawi TV </a>4 Jam yang lalu</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card’s content.</p>
+              <a href="#detail report.html" class="btn btn-primary">Selengkapnya...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 mg-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="card">
+            <p style="background-color: rgb(0, 0, 0.3);" class="position-absolute bg-dak text-white border-0 px-3 py-2">
+              NEWS</p>
+            <img src="./assets/images/images-16.jpeg" class="card-img-top" style="height: 500px; overflow: hidden;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Perselisihan Pasutri di Kota Ngawi</h5>
+              <p class="mb-4">By: <a class="text-decoration-none" href="">Ngawi TV </a>4 Jam yang lalu</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card’s content.</p>
+              <a href="#detail report.html" class="btn btn-primary">Selengkapnya...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- pagination -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- footer -->
+    <footer class="bg-primary">
+      <div class="container m-t-5 p-5">
+        <div class="row justify-content-between gap-4">
+          <div class="col-md-4 text-white" data-aos="fade-up" data-aos-delay="300">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img src="./assets/images/images-5.png" alt="logo" width="30"
+                class="d-inline-block align-text-top rounded">
+              <h2 class="fw-bold-m-0">E-REPORT</h2>
+            </div>
+            <p data-aos="fade-up" data-aos-delay="300">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, soluta nisi porro numquam architecto
+              corrupti dolor tempora id dicta nobis sunt dolorem corporis, libero illo quas aliquid asperiores?
+              Repellat,
+              voluptas.</p>
+          </div>
+          <div class="col-md-2 d-flex flex-column gap-2" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="fw-bold text-white">Menu</h4>
+            <a href="index.html#home" class="footer-link text-white text-decoration-none">Home</a>
+            <a href="index.html#about" class="footer-link text-white text-decoration-none">About</a>
+            <a href="index.html#services" class="footer-link text-white text-decoration-none">Services</a>
+            <a href="index.html#recent" class="footer-link text-white text-decoration-none">Recent</a>
+            <a href="index.html#faq" class="footer-link text-white text-decoration-none">FAQ</a>
+          </div>
+          <div class="col-md-4 d-flex flex-column gap-2 text-white" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="FW-BOLD">Contact us</h4>
+            <p class="m-0 align-items-center gap-2"><i class="fas fa-envelope"></i>dolehjawa@gmail.com</p>
+            <p class="m-0 align-items-center gap-2"><i class="fas fa-phone"></i>085353110584</p>
+            <P class="m-0 align-items-center gap-2"><i class="fas fa-map-marker-alt"></i>Jl lumbu timur IV Blok X No 127
+            </P>
+          </div>
+        </div>
+        <div class="copyright text-center text-white" data-aos="fade-up" data-aos-delay="300">
+          <p>&copy; Copyright by <span class="fw-bold">RPL class</span> 2026, All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- jss boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS js -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

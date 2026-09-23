@@ -13,35 +13,46 @@
 
   <!-- my css -->
   <link rel="stylesheet" href="./assets/style.css">
+
+  <!-- cdn fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- AOS css -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-primary-subtle py-4">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 animate__animated animate__fadeInDown">
+    <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="./assets/images/logo.jpg" alt="Logo" width="30" class="d-inline-block align-text-top rounded">
-        <span>IDN E-REPORT</span>
+        <img src="./assets/images/logo.jpg" alt="Logo" width="60" class="d-inline-block text-align-text-top rounded">
+        <span> E-REPORT IDN</span>
         <button class="navbar-toggler bg-white shadow-none" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
-            <li class=" text-primary">
-              <a class="nav-link" href="#">Home</a>
+          <ul class="navbar-nav ms-auto gap-4 text-center pt-2 pt-lg-0">
+            <li class=" nav-item ">
+              <a class="nav-link text-primary" href="#Home">Home</a>
             </li>
-            <li class=" text-primary">
-              <a class="nav-link" href="#">About</a>
+            <li class=" nav-item ">
+              <a class="nav-link text-primary" href="#About">About</a>
             </li>
-            <li class=" text-primary">
-              <a class="nav-link" href="#">Services</a>
+            <li class=" nav-item ">
+              <a class="nav-link text-primary" href="#Services">Services</a>
             </li>
-            <li class=" text-primary">
-              <a class="nav-link" href="#">Recent</a>
+            <li class=" nav-item ">
+              <a class="nav-link text-primary" href="#Recent">Recent</a>
             </li>
-            <li class=" text-primary">
-              <a class="nav-link" href="#">FAQ</a>
+            <li class=" nav-item ">
+              <a class="nav-link text-primary" href="#FAQ">FAQ</a>
             </li>
           </ul>
         </div>
@@ -51,16 +62,18 @@
   <!-- hero section -->
   <section id="hero">
     <div class="container">
-      <div class="hero row align-items-center gap-5 flex-nowrap flex-column flex-lg-row text-center text-lg-start">
-        <div class="col">
-          <h1 class="fw-bold">Selamat Datang <br> di <span class="text-primary">Aplikasi IDN E-REPORT 2026</span> Form Pengaduan</h1>
-          <p class="lh-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum vitae soluta voluptatum vero maiores facilis in impedit repellat quod voluptatibus?</p>
-        <div class="col mt-4 ">
-          <a href="" class="btn btn-primary">About Us</a>
-          <a href="" class="btn btn-outline-primary">Let's Start</a>
+      <div class="hero row align-items-center gap-5 flex-nowrap flex-column flex-lg-row text-center text-lg-start overflow-hidden">
+        <div class="col text-center text-md-start animate__animated animate__fadeInLeft animate__delay-1s">
+          <h1 class="fw-bold">Selamat Datang <br> di <span class="text-primary">Aplikasi IDN E-REPORT 2026</span> Form
+            Pengaduan</h1>
+          <p class="lh-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum vitae soluta voluptatum vero
+            maiores facilis in impedit repellat quod voluptatibus?</p>
+          <div class="col mt-4 ">
+            <a href="" class="btn btn-primary">About Us</a>
+            <a href="e-report.index.html" class="btn btn-outline-primary">Let's Start</a>
+          </div>
         </div>
-      </div>
-        <div class="col d-flex justify-content-end justify-content-lg-end">
+        <div class="col d-flex justify-content-end justify-content-lg-end animate__animated animate__fadeInRight animate__delay-2s">
           <img src="./assets/images/undraw_anonymous-feedback_gug3.png" alt="">
         </div>
       </div>
@@ -72,21 +85,283 @@
     <div class="container">
       <div class="about row">
         <div class="col text-center">
-          <h2 class="fw-bold text-primary mb-4">About Us</h2>
-          <p class="lh-lg mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatum.</p>
-          <img src="./assets/images/undraw_about-us-page_dbh0.png" alt="">
+          <h2 class="fw-bold text-primary mb-4" data-aos="fade-up" data-aos-delay="1000">About Us</h2>
+          <p class="lh-lg mb-5" data-aos="fade-up" data-aos-delay="1000" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatum.</p>
+          <img src="./assets/images/undraw_about-us-page_dbh0.png" alt="" data-aos="fade-up" data-aos-delay="200">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- jss boostrap -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-    crossorigin="anonymous"></script>
+  <!-- Services section -->
+  <section id="services">
+    <div class="container">
+      <div>
+        <h1 class="text-primary" data-aos="fade-up" data-aos-duration="1000">OUR SERVICES</h1>
+        <p data-aos="fade-up" data-aos-delay="300">lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatum.</p>
+      </div>
+      <div class="row p-4 p-lg-0 gap-3">
+        <div class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis" data-aos="fade-up" data-aos-delay="700">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h4 class="fw-semibold">Pengaduan Akademik</h4>
+          <p class="lh-lg mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, tempore ullam!
+            Harum quis laborum similique excepturi explicabo officiis vel. Deleniti.</p>
+        </div>
+        <div class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis" data-aos="fade-up" data-aos-delay="600">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h4 class="fw-semibold">Pengaduan Fasilitas</h4>
+          <p class="lh-lg mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, tempore ullam!
+            Harum quis laborum similique excepturi explicabo officiis vel. Deleniti.</p>
+        </div>
+        <div class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis" data-aos="fade-up" data-aos-delay="500">
+          <i class="fa-solid fa-user-secret"></i>
+          <h4 class="fw-semibold">Pengaduan Keamanan</h4>
+          <p class="lh-lg mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, tempore ullam!
+            Harum quis laborum similique excepturi explicabo officiis vel. Deleniti.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent section -->
+    <section id="recent">
+      <div class="container">
+        <div class="text-endm mb-5">
+          <h1 class="text-primary fw-bold" data-aos="fade-up" data-aos-delay="300">NEWS SELECTION !!!</h1>
+          <p class="lead" data-aos="fade-up" data-aos-delay="1000">lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4 mg-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="card">
+              <p style="background-color: rgb(0, 0, 0.3);"
+                class="position-absolute bg-dak text-white border-0 px-3 py-2">NEWS</p>
+              <img src="./assets/images/Catholic 𐕣 (@myshawti) on X.jpg" class="card-img-top" style="height: 400px; overflow: hidden;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Perselisihan Pasutri di Kota Ngawi</h5>
+                <p class="mb-4">By: <a class="text-decoration-none" href="">Kopdes TV </a>4 Jam yang lalu</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card’s content.</p>
+                <a href="#detail report.html" class="btn btn-primary">Selengkapnya...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 mg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card">
+              <p style="background-color: rgb(0, 0, 0.3);"
+                class="position-absolute bg-dak text-white border-0 px-3 py-2">NEWS</p>
+              <img src="./assets/images/ .jpg" class="card-img-top" style="height: 400px; overflow: hidden;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Vidio Tiktok viral tahun 2026</h5>
+                <p class="mb-4">By: <a class="text-decoration-none" href="">Gjelas TV </a>4 Jam yang lalu</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card’s content.</p>
+                <a href="#detail report.html" class="btn btn-primary">Selengkapnya...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 mg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card">
+              <p style="background-color: rgb(0, 0, 0.3);"
+                class="position-absolute bg-dak text-white border-0 px-3 py-2">NEWS</p>
+              <img src="./assets/images/ -3.jpg" class="card-img-top" style="height: 400px; overflow: hidden;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Anak ilang di pertamina</h5>
+                <p class="mb-4">By: <a class="text-decoration-none" href="">N'word TV </a>4 Jam yang lalu</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card’s content.</p>
+                <a href="#detail report.html" class="btn btn-primary">Selengkapnya...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FAQ section -->
+    <section id="faq">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <h1 class="fw-bold mb-4 text-primary" data-aos="fade-up" data-aos-delay="300">FAQ</h1>
+          <p data-aos="fade-up" data-aos-delay="300">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil, distinctio rem nulla porro
+            suscipit, doloribus assumenda et beatae dolore dicta nobis quaerat eum quia!
+          </p>
+        </div>
+        <div class="accordion pt-4" id="faqAccordion">
+          <div class="row row-cols-md-2 row-cols-1 g-4">
+            <div class="col" data-aos="fade-up" data-aos-delay="700">
+              <div class="accordion-items">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                    Apa itu E-Report?
+                  </button>
+                </h2>
+                <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#collapseAccordion">
+                  <div class="accordion-body">
+                    E-Report adalah sebuah platform digital yang memungkinkan pengguna untuk melaporkan masalah,
+                    kejadian, atau pengaduan secara online. Dengan E-Report, proses pelaporan menjadi lebih cepat,
+                    efisien, dan dapat diakses dari mana saja.
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="600">
+              <div class="accordion-items">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqTwo" aria-expanded="true" aria-controls="faqTwo">
+                    Apa itu E-Report?
+                  </button>
+                </h2>
+                <div id="faqTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                  data-bs-parent="#collapseAccordion">
+                  <div class="accordion-body">
+                    E-Report adalah sebuah platform digital yang memungkinkan pengguna untuk melaporkan masalah,
+                    kejadian, atau pengaduan secara online. Dengan E-Report, proses pelaporan menjadi lebih cepat,
+                    efisien, dan dapat diakses dari mana saja.
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="500">
+              <div class="accordion-items">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqThree" aria-expanded="true" aria-controls="faqThree">
+                    Apa itu E-Report?
+                  </button>
+                </h2>
+                <div id="faqThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                  data-bs-parent="#collapseAccordion">
+                  <div class="accordion-body">
+                    E-Report adalah sebuah platform digital yang memungkinkan pengguna untuk melaporkan masalah,
+                    kejadian, atau pengaduan secara online. Dengan E-Report, proses pelaporan menjadi lebih cepat,
+                    efisien, dan dapat diakses dari mana saja.
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="400">
+              <div class="accordion-items">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqFour" aria-expanded="true" aria-controls="faqFour">
+                    Apa itu E-Report?
+                  </button>
+                </h2>
+                <div id="faqFour" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#collapseAccordion">
+                  <div class="accordion-body">
+                    E-Report adalah sebuah platform digital yang memungkinkan pengguna untuk melaporkan masalah,
+                    kejadian, atau pengaduan secara online. Dengan E-Report, proses pelaporan menjadi lebih cepat,
+                    efisien, dan dapat diakses dari mana saja.
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="300">
+              <div class="accordion-items">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqFive" aria-expanded="true" aria-controls="faqFive">
+                    Apa itu E-Report?
+                  </button>
+                </h2>
+                <div id="faqFive" class="accordion-collapse collapse show" aria-labelledby="headingFive"
+                  data-bs-parent="#collapseAccordion">
+                  <div class="accordion-body">
+                    E-Report adalah sebuah platform digital yang memungkinkan pengguna untuk melaporkan masalah,
+                    kejadian, atau pengaduan secara online. Dengan E-Report, proses pelaporan menjadi lebih cepat,
+                    efisien, dan dapat diakses dari mana saja.
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="300">
+              <div class="accordion-items">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqSix" aria-expanded="true" aria-controls="faqSix">
+                    Apa itu E-Report?
+                  </button>
+                </h2>
+                <div id="faqSix" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#collapseAccordion">
+                  <div class="accordion-body">
+                    E-Report adalah sebuah platform digital yang memungkinkan pengguna untuk melaporkan masalah,
+                    kejadian, atau pengaduan secara online. Dengan E-Report, proses pelaporan menjadi lebih cepat,
+                    efisien, dan dapat diakses dari mana saja.
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-primary">
+      <div class="container m-t-5 p-5">
+        <div class="row justify-content-between gap-4">
+          <div class="col-md-4 text-white" data-aos="fade-up" data-aos-delay="300">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img src="./assets/images/images-5.png" alt="logo" width="30" class="d-inline-block align-text-top rounded">
+              <h2 class="fw-bold-m-0">E-REPORT</h2>
+            </div>
+          <p data-aos="fade-up" data-aos-delay="300">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, soluta nisi porro numquam architecto
+            corrupti dolor tempora id dicta nobis sunt dolorem corporis, libero illo quas aliquid asperiores? Repellat,
+            voluptas.</p>         
+           </div>
+            <div class="col-md-2 d-flex flex-column gap-2" data-aos="fade-up" data-aos-delay="300">
+              <h4 class="fw-bold text-white">Menu</h4>
+              <a href="#home" class="footer-link text-white text-decoration-none">Home</a>
+              <a href="#about" class="footer-link text-white text-decoration-none">About</a>
+              <a href="#services" class="footer-link text-white text-decoration-none">Services</a>
+              <a href="#recent" class="footer-link text-white text-decoration-none">Recent</a>
+              <a href="#faq" class="footer-link text-white text-decoration-none">FAQ</a>
+            </div>
+            <div class="col-md-4 d-flex flex-column gap-2 text-white" data-aos="fade-up" data-aos-delay="300">
+              <h4 class="FW-BOLD">Contact us</h4>
+              <p class="m-0 align-items-center gap-2"><i class="fas fa-envelope"></i><a href="https://mailto:dolehjawa@gmail.com" class="text-white text-decoration-none">dolehjawa@gmail.com</a></p>
+              <p class="m-0 align-items-center gap-2"><i class="fas fa-phone"></i><a href="https://wa.me/+6285353110584" class="text-white text-decoration-none">+62 853-5311-0584</a></p>
+              <P class="m-0 align-items-center gap-2"><i class="fas fa-map-marker-alt"></i><a href="https://maps.google.com/?q=Jl+lumbu+timur+IV+Blok+X+No+127" target="_blank" class="text-white text-decoration-none">Jl lumbu timur IV Blok X No 127</a></P>
+            </div>
+        </div>
+        <div class="copyright text-center text-white" data-aos="fade-up" data-aos-delay="300">
+          <p>&copy; Copyright by <span class="fw-bold">RPL class</span> 2026, All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jss boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"></script>
+
+      <!-- AOS js -->
+      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
