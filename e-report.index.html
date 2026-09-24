@@ -47,49 +47,61 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto gap-lg-3 text-center pt-3 pt-lg-0 fw-semibold">
           <li class="nav-item">
-            <a class="nav-link text-primary active" aria-current="page" href="#Home">Home</a>
+            <a class="nav-link text-primary active" aria-current="page" href="index.html#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#About">About</a>
+            <a class="nav-link text-primary" href="index.html#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#Services">Services</a>
+            <a class="nav-link text-primary" href="index.html#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#Recent">Recent</a>
+            <a class="nav-link text-primary" href="index.html#recent">Recent</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#FAQ">FAQ</a>
+            <a class="nav-link text-primary" href="index.html#faq">FAQ</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
+
   <!-- all reports -->
   <section id="reports">
     <div class="container">
       <!-- Header -->
-      <div class="mb-4 text-center">
-        <h1 class="fw-bold text-primary-emphasis" data-aos="fade-up" data-aos-duration="1000">All Reports</h1>
-        <p class="lh-lg text-muted " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Lihat semua
-          laporan ang telah dikirim, filter berdasarkan kategori atau cari laporan tertentu.</p>
+      <div
+        class="d-flex align-items-center text-lg-start justify-content-md-between flex-column flex-lg-row mb-4 gap-2">
+        <div class="col-lg-8 text-center text-md-start" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="fw-bold text-primary-emphasis" data-aos="fade-up" data-aos-duration="1000">All Reports</h1>
+          <p class="lh-lg text-muted " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Lihat semua
+            laporan ang telah dikirim, filter berdasarkan kategori atau cari laporan tertentu.</p>
+
+        </div>
+        <div class="col-lg-2" data-aos="fade-up" data-aos-delay="300">
+          <button class="btn btn-primary shadow-sm" data-aos="fade-up" data-aos-delay="300" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            <i class="fas fa-plus"></i> Tambah Laporan
+          </button>
+        </div>
       </div>
       <!-- filter & search -->
       <div class="row mb-4 g-2 align-items-center">
-        <div class="col md-4">
+        <div class="col-md-4">
           <input type="text" class="form-control" placeholder="Search reports..." data-aos="fade-up"
             data-aos-delay="300">
         </div>
-        <div class="col md-3">
+        <div class="col-md-3">
           <select class="form-select shadow-sm" data-aos="fade-up" data-aos-delay="300">
             <option selected>All Categories</option>
-            <option value="news">Dramok</option>
-            <option value="category2">Reza drama</option>
-            <option value="category3">Jmk 48</option>
+            <option value="news">Akademik</option>
+            <option value="category2">Fasilitas</option>
+            <option value="category3">Keamanan</option>
           </select>
         </div>
-        <div class="col md-3">
+        <div class="col-md-3">
           <select class="form-select shadow-sm" data-aos="fade-up" data-aos-delay="300">
             <option selected>All Status</option>
             <option value="newest">Terbaru</option>
@@ -97,7 +109,7 @@
             <option value="popular">Populer</option>
           </select>
         </div>
-        <div class="col MD-2">
+        <div class="col-md-2">
           <button class="btn btn-primary w-100" data-aos="fade-up" data-aos-delay="300"><I
               class="fas fa-filter"></I>Filter</button>
         </div>
@@ -115,7 +127,7 @@
               <p class="mb-4">By: <a class="text-decoration-none" href="">Horor TV </a>4 Jam yang lalu</p>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                 card’s content.</p>
-              <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+              <a href="#detail report.html" class="btn btn-primary">Selengkapnya...</a>
             </div>
           </div>
         </div>
@@ -130,7 +142,7 @@
               <p class="mb-4">By: <a class="text-decoration-none" href="">Ngawi TV </a>4 Jam yang lalu</p>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                 card’s content.</p>
-              <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+              <a href="#detail report.html" class="btn btn-primary">Selengkapnya...</a>
             </div>
           </div>
         </div>
@@ -145,10 +157,58 @@
               <p class="mb-4">By: <a class="text-decoration-none" href="">Ngawi TV </a>4 Jam yang lalu</p>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                 card’s content.</p>
-              <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+              <a href="#detail report.html" class="btn btn-primary">Selengkapnya...</a>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h1 class="modal-title fs-5 fw-semibold" id="exampleModalLabel"> <i
+                  class="fa-solid fa-pen-to-square"></i>Tambah Laporan</h1>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <form action="">
+              <div class="modal-body p-3">
+                <form>
+                  <div class="mb-3">
+                    <label for="reportTitle" class="form-label">Judul Laporan</label>
+                    <input type="text" class="form-control" id="reportTitle" placeholder="Masukkan judul laporan">
+                  </div>
+                  <div class="mb-3">
+                    <label for="reportCategory" class="form-label">Kategori</label>
+                    <select class="form-select" id="reportCategory">
+                      <option selected>Pilih kategori</option>
+                      <option value="">Akademik</option>
+                      <option value="">Fasilitas</option>
+                      <option value="">Keamanan</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="reportContent" class="form-label">Isi Laporan</label>
+                    <textarea class="form-control" id="reportContent" rows="4"
+                      placeholder="Masukkan isi laporan"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="reportImage" class="form-label">Upload Gambar</label>
+                    <input type="file" class="form-control" id="reportImage">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Kirim
+                  Laporan</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
       </div>
 
       <!-- pagination -->
